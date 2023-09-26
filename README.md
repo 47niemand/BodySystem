@@ -41,3 +41,14 @@ To run the simulator execute the following command in the root directory:
 ```bash
 $ ./gradlew run
 ```
+
+Controls
+--------
+
+- Use numbers `1`-`6` to select to switch extensions on and off.
+- Use `s` to add random set many small bodies.
+- Use `r` or `R` to set few bodies.
+- Use `t` to toggle between static and dynamic bodies.`
+- Use `a` to add a random velocity to all bodies.
+- Use `m` to toggle collision mesh visualization.
+- Use `t` to toggle trails.
