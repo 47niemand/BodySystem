@@ -41,10 +41,10 @@ public interface Complex {
     double ANGLE_RIGHT = ANGLE_270;
     double ANGLE_360 = Math.PI * 2;
 
-    Complex UP_LEFT = Complex.immutableOf(Math.cos(ANGLE_45), Math.sin(ANGLE_45));
-    Complex UP_RIGHT = Complex.immutableOf(Math.cos(ANGLE_45), -Math.sin(ANGLE_45));
-    Complex DOWN_LEFT = Complex.immutableOf(-Math.cos(ANGLE_45), Math.sin(ANGLE_45));
-    Complex DOWN_RIGHT = Complex.immutableOf(-Math.cos(ANGLE_45), -Math.sin(ANGLE_45));
+    Complex UP_LEFT = Complex.immutableOf(-Math.cos(ANGLE_45), Math.sin(ANGLE_45));
+    Complex UP_RIGHT = Complex.immutableOf(Math.cos(ANGLE_45), Math.sin(ANGLE_45));
+    Complex DOWN_LEFT = Complex.immutableOf(-Math.cos(ANGLE_45), -Math.sin(ANGLE_45));
+    Complex DOWN_RIGHT = Complex.immutableOf(Math.cos(ANGLE_45), -Math.sin(ANGLE_45));
 
     /**
      * Create a new complex number
