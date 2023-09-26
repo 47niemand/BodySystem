@@ -5,18 +5,18 @@ import pp.muza.universe.body.Body;
 import pp.muza.universe.extensions.BaseSystemExtension;
 
 /**
- * A MediaResistance is an extension that can change the speed of bodies in the system by applying a resistance force.
+ * A MediumResistance is an extension that can change the speed of bodies in the system by applying a resistance force.
  */
-public class MediaResistance extends BaseSystemExtension {
+public class MediumResistance extends BaseSystemExtension {
 
     private static final double DEFAULT_K = 0.0001;
     private final double K;  // kg/m^3 * K
 
-    public MediaResistance(double k) {
+    public MediumResistance(double k) {
         K = k;
     }
 
-    public MediaResistance() {
+    public MediumResistance() {
         this(DEFAULT_K);
     }
 

@@ -109,8 +109,8 @@ class MainPanel extends JPanel {
                         MainPanel.this.system.sendMessages(GameAction.Action.TOGGLE_EXTENSIONS, List.of("Merge"));
                         break;
                     case '4':
-                        labelPrint.add("MediaResistance " + (MainPanel.this.system.isExtensionEnabled("MediaResistance") ? " off" : " on"), 100);
-                        MainPanel.this.system.sendMessages(GameAction.Action.TOGGLE_EXTENSIONS, List.of("MediaResistance"));
+                        labelPrint.add("MediumResistance " + (MainPanel.this.system.isExtensionEnabled("MediumResistance") ? " off" : " on"), 100);
+                        MainPanel.this.system.sendMessages(GameAction.Action.TOGGLE_EXTENSIONS, List.of("MediumResistance"));
                         break;
                     case '5':
                         MainPanel.this.system.sendMessages(GameAction.Action.DISABLE_EXTENSIONS, List.of("FineCollision"));

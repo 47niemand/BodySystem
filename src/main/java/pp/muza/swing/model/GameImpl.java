@@ -15,7 +15,7 @@ import pp.muza.universe.extensions.gravitation.Gravitation;
 import pp.muza.universe.extensions.gravitation.GravitationVector;
 import pp.muza.universe.extensions.merge.Merge;
 import pp.muza.universe.extensions.move.Movement;
-import pp.muza.universe.extensions.resistance.MediaResistance;
+import pp.muza.universe.extensions.resistance.MediumResistance;
 
 import java.awt.*;
 import java.util.ArrayDeque;
@@ -64,7 +64,7 @@ public class GameImpl implements Game {
         system.addExtension(simpleCollision);
         system.addExtension(fineCollision);
         system.addExtension(new Movement());
-        system.addExtension(new MediaResistance());
+        system.addExtension(new MediumResistance());
         system.addExtension(new Boundary(0, 0, DEFAULT_CANVAS_WIDTH, DEFAULT_CANVAS_HEIGHT));
         system.addExtension(merge);
 
@@ -76,7 +76,7 @@ public class GameImpl implements Game {
         //system.enableExtension(Gravitation.class.getSimpleName());
         system.enableExtension(Force.class.getSimpleName());
         //system.enableExtension(GravitationVector.class);
-        //system.enableExtension(MediaResistance.class.getSimpleName());
+        //system.enableExtension(MediumResistance.class.getSimpleName());
         system.enableExtension(Movement.class.getSimpleName());
         //system.enableExtension(Merge.class.getSimpleName());
     }
