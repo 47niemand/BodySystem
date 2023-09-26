@@ -233,10 +233,6 @@ public class CollisionPair extends BodyPair {
                 timeToCollision = Math.min(x[0], x[1]);
             }
 
-            if (!(!Double.isFinite(timeToCollision) || timeToCollision < 0 || Math.abs(Complex.squareDistance(Complex.add(position1, Complex.scale(velocity1, timeToCollision)), Complex.add(position2, Complex.scale(velocity2, timeToCollision))) - (r1 + r2) * (r1 + r2)) <= SOLVE_ERROR)) {
-                System.out.println("timeToCollision = " + timeToCollision);
-            }
-
             assert !Double.isFinite(timeToCollision) || timeToCollision < 0 || Math.abs(Complex.squareDistance(Complex.add(position1, Complex.scale(velocity1, timeToCollision)), Complex.add(position2, Complex.scale(velocity2, timeToCollision))) - (r1 + r2) * (r1 + r2)) <= SOLVE_ERROR;
         }
         return timeToCollision;

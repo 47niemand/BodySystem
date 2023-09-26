@@ -24,8 +24,8 @@ public class Circles implements DraftsMan {
             return;
         }
         for (Body body : bodies) {
-            int x = (int) body.position.getValue(Complex.X);
-            int y = (int) body.position.getValue(Complex.Y);
+            int x = (int) Math.round(body.position.getValue(Complex.X));
+            int y = (int) Math.round(body.position.getValue(Complex.Y));
             int radius = (int) Math.round(body.r);
             radius = radius < 0 ? 1 : radius;
             g.setColor((Color) body.tag);
