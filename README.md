@@ -50,4 +50,4 @@ Controls
 - Use `a` to add a random velocity to all bodies.
 - Use `m` to toggle collision mesh visualization.
 - Use `t` to toggle trails.
-- Use `c' to clear trails and collision mesh.
+- Use `c` to clear trails and collision mesh.
